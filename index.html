@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI4GTech Anatolia | METU DTX</title>
+  <meta name="description" content="AI4GTech Anatolia is a European Digital Innovation Hub coordinated by METU DTX to support AI, green and twin transformation in Türkiye’s machinery and automotive industries.">
+  <style>
+    :root {
+      --bg: #f7faf9;
+      --panel: #ffffff;
+      --ink: #10201d;
+      --muted: #5f6f6b;
+      --line: #dfe9e6;
+      --brand: #0f766e;
+      --brand-dark: #0b4f4a;
+      --green: #5aa469;
+      --blue: #243c7a;
+      --soft: #e7f4f1;
+      --soft-blue: #eef3ff;
+      --shadow: 0 24px 70px rgba(16, 32, 29, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 12% 5%, rgba(15, 118, 110, 0.16), transparent 30%),
+        radial-gradient(circle at 90% 8%, rgba(36, 60, 122, 0.13), transparent 28%),
+        var(--bg);
+      color: var(--ink);
+    }
+
+    .page-shell {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 34px 0 32px;
+    }
+
+    header.topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px 0;
+    }
+
+    .brand {
+      font-weight: 850;
+      letter-spacing: -0.04em;
+      font-size: 1.28rem;
+    }
+
+    .brand span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 650;
+      letter-spacing: 0;
+      margin-top: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 750;
+      font-size: 0.94rem;
+    }
+
+    nav a:hover {
+      color: var(--brand-dark);
+    }
+
+    .hero {
+      min-height: 500px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 36px;
+      align-items: center;
+      padding: 54px 0 42px;
+    }
+
+    .eyebrow {
+      color: var(--brand);
+      font-size: 0.82rem;
+      font-weight: 850;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.9rem, 7vw, 5.9rem);
+      line-height: 0.96;
+      letter-spacing: -0.07em;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 26px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 850;
+      border: 1px solid var(--line);
+    }
+
+    .button.primary {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+
+    .button.primary:hover {
+      background: var(--brand-dark);
+    }
+
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--ink);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .hero-card h2 {
+      margin: 0 0 12px;
+      font-size: 1.45rem;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .badge {
+      background: var(--soft);
+      color: var(--brand-dark);
+      border: 1px solid rgba(15, 118, 110, 0.18);
+      border-radius: 16px;
+      padding: 12px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      letter-spacing: -0.06em;
+    }
+
+    .section-title p {
+      max-width: 780px;
+      margin: 14px auto 0;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 1.05rem;
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .pillar {
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 22px;
+      min-height: 240px;
+      box-shadow: 0 16px 48px rgba(16, 32, 29, 0.07);
+    }
+
+    .pillar-num {
+      width: 34px;
+      height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 850;
+      margin-bottom: 16px;
+    }
+
+    .pillar h3 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+      line-height: 1.25;
+      letter-spacing: -0.03em;
+    }
+
+    .pillar p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.94rem;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .info-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 28px;
+      box-shadow: 0 16px 48px rgba(16, 32, 29, 0.07);
+    }
+
+    .info-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      letter-spacing: -0.04em;
+    }
+
+    .info-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .sector-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .sector {
+      background: var(--soft-blue);
+      color: var(--blue);
+      border: 1px solid rgba(36, 60, 122, 0.16);
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--brand-dark), var(--blue));
+      color: #fff;
+      border-radius: 32px;
+      padding: 38px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      letter-spacing: -0.06em;
+    }
+
+    .cta p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.65;
+      font-size: 1.05rem;
+    }
+
+    .cta .hero-actions {
+      justify-content: center;
+    }
+
+    .cta .button.primary {
+      background: #fff;
+      color: var(--brand-dark);
+      border-color: #fff;
+    }
+
+    .cta .button.secondary {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    footer a {
+      color: var(--brand-dark);
+      text-decoration: none;
+      font-weight: 850;
+    }
+
+    @media (max-width: 1040px) {
+      .hero,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .pillars {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .page-shell {
+        width: min(100% - 28px, 1120px);
+        padding-top: 18px;
+      }
+
+      header.topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 48px 0 36px;
+      }
+
+      .pillars,
+      .badge-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .cta {
+        padding: 30px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        AI4GTech Anatolia
+        <span>A METU DTX coordinated European Digital Innovation Hub</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="https://metudtx.com">Gateway</a>
+        <a href="https://portal.metudtx.com">Platform</a>
+        <a href="https://dtx.metu.edu.tr">METU DTX</a>
+        <a href="mailto:info@metudtx.com">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">AI, Green and Twin Transformation</div>
+        <h1>AI4GTech Anatolia</h1>
+        <p class="lead">
+          AI4GTech Anatolia is a European Digital Innovation Hub coordinated by METU DTX to accelerate human-centric, trustworthy AI adoption for the green and digital transformation of Türkiye’s machinery and automotive industries.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://portal.metudtx.com">Access Digital Platform</a>
+          <a class="button secondary" href="mailto:info@metudtx.com">Contact METU DTX</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h2>One-stop shop for industrial transformation</h2>
+        <p>
+          The hub connects companies with maturity assessment, test-before-invest services, training, access to finance, innovation ecosystem support and trustworthy AI guidance.
+        </p>
+        <div class="badge-grid">
+          <span class="badge">Machinery Industry</span>
+          <span class="badge">Automotive Industry</span>
+          <span class="badge">AI Adoption</span>
+          <span class="badge">Green Transition</span>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Service pillars</h2>
+        <p>
+          AI4GTech Anatolia structures its services around the core European Digital Innovation Hub service model, expanded with trustworthy AI and twin transformation support.
+        </p>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-num">1</div>
+          <h3>Test Before Invest</h3>
+          <p>AI-driven prototyping, robotics, digital twins, simulation, material testing, crash testing and laboratory-based validation before major investment decisions.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-num">2</div>
+          <h3>Training and Skills</h3>
+          <p>Training on AI, data governance, industrial cybersecurity, digitalisation and sustainable technology adoption for SMEs and public-sector staff.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-num">3</div>
+          <h3>Access to Finance</h3>
+          <p>Advisory support to connect beneficiaries with EU and national instruments, investors, funding channels and sustainable investment roadmaps.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-num">4</div>
+          <h3>Innovation Ecosystem</h3>
+          <p>Matchmaking, brokerage, collaborative R&I projects, technology provider connections and access to European AI innovation infrastructures.</p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-num">5</div>
+          <h3>Trustworthy AI Help Desk</h3>
+          <p>First-line guidance on AI Act compliance, ethical AI deployment, GDPR alignment and referrals to AI Factories, TEFs and related EU resources.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="split">
+      <div class="info-card">
+        <h3>Target sectors</h3>
+        <p>
+          The hub focuses on Türkiye’s industrial heartland, particularly machinery, automotive and related manufacturing value chains where digitalisation, AI adoption and green transition are becoming immediate competitiveness requirements.
+        </p>
+        <div class="sector-list">
+          <span class="sector">Machinery</span>
+          <span class="sector">Automotive</span>
+          <span class="sector">Industrial SMEs</span>
+          <span class="sector">Technology Providers</span>
+          <span class="sector">Public Administrations</span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>Coordinated by METU DTX</h3>
+        <p>
+          AI4GTech Anatolia is coordinated by the Digital Transformation and Innovation Center at Middle East Technical University, connecting university-industry capability, laboratory infrastructure, technoparks, industrial chambers, organised industrial zones and research partners.
+        </p>
+        <div class="sector-list">
+          <span class="sector">METU DTX</span>
+          <span class="sector">EDIH</span>
+          <span class="sector">European AI Ecosystem</span>
+          <span class="sector">Twin Transformation</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Start with the digital platform</h2>
+      <p>
+        Companies can begin their transformation journey through the METU DTX Digital Transformation Platform and continue toward assessment, roadmap, training, test-before-invest and ecosystem services.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://portal.metudtx.com">Open Platform Landing</a>
+        <a class="button secondary" href="https://metudtx.com">Back to Gateway</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        AI4GTech Anatolia — coordinated by METU DTX, Middle East Technical University<br>
+        <a href="https://metudtx.com">metudtx.com</a> · <a href="mailto:info@metudtx.com">info@metudtx.com</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
