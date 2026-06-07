@@ -6,6 +6,9 @@
   <title>AI4GTech Anatolia | METU DTX</title>
   <meta name="description" content="AI4GTech Anatolia is a METU DTX-coordinated European Digital Innovation Hub initiative for AI-driven green and twin transformation in the machinery and automotive industries.">
   <meta name="theme-color" content="#0b4f4a">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon.png">
   <style>
     :root {
       --bg: #f5faf8;
@@ -72,18 +75,36 @@
       text-decoration: none;
     }
 
-    .brand-mark {
-      width: 46px;
-      height: 46px;
-      border-radius: 16px;
-      background: linear-gradient(135deg, var(--teal-dark), var(--blue));
-      box-shadow: 0 16px 36px rgba(11, 79, 74, 0.18);
-      display: grid;
-      place-items: center;
-      color: #fff;
-      font-weight: 900;
-      letter-spacing: -0.08em;
-      font-size: 1.06rem;
+    .brand-logo {
+      width: 54px;
+      height: 54px;
+      object-fit: contain;
+      flex: 0 0 auto;
+      filter: drop-shadow(0 12px 22px rgba(11, 79, 74, 0.14));
+    }
+
+    .metu-mini-logo {
+      height: 38px;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 18px;
+      filter: drop-shadow(0 10px 20px rgba(15, 31, 28, 0.10));
+    }
+
+    .footer-brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand-row img {
+      max-height: 34px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.92;
     }
 
     .brand-text {
@@ -845,6 +866,11 @@
         flex-direction: column;
       }
 
+      .brand-logo {
+        width: 48px;
+        height: 48px;
+      }
+
       .pathway,
       .service-grid,
       .grid-4,
@@ -864,7 +890,7 @@
   <main class="page-shell">
     <header class="topbar">
       <a class="brand" href="https://ai4gtech.metudtx.com" aria-label="AI4GTech Anatolia home">
-        <span class="brand-mark">AI</span>
+        <img class="brand-logo" src="ai4gtech-logo.png" alt="AI4GTech Anatolia logo">
         <span class="brand-text">
           AI4GTech Anatolia
           <span>METU DTX coordinated EDIH initiative</span>
@@ -1084,6 +1110,7 @@
     <section>
       <div class="wide-panel split">
         <div>
+          <img class="metu-mini-logo" src="metu-dtx-logo.png" alt="METU DTX logo">
           <div class="section-title" style="text-align:left; margin:0 0 20px;">
             <div class="label">METU DTX technical layer</div>
             <h2>Execution and verification capacity</h2>
@@ -1247,6 +1274,10 @@
     </section>
 
     <footer>
+      <div class="footer-brand-row">
+        <img src="ai4gtech-logo.png" alt="AI4GTech Anatolia logo">
+        <img src="metu-dtx-logo.png" alt="METU DTX logo">
+      </div>
       <p>
         AI4GTech Anatolia — coordinated by METU DTX, Middle East Technical University<br>
         <a href="https://metudtx.com">metudtx.com</a> · <a href="https://portal.metudtx.com">portal.metudtx.com</a> · <a href="mailto:info@metudtx.com">info@metudtx.com</a>
