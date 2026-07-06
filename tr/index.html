@@ -151,22 +151,32 @@
       padding: 4px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(255,255,255,0.75);
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 8px 22px rgba(15, 31, 29, 0.05);
     }
 
     .language-switch a {
-      min-width: 34px;
-      padding: 6px 9px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 36px;
+      min-height: 30px;
+      padding: 0 10px;
       border-radius: 999px;
-      text-align: center;
+      color: var(--muted);
       font-size: 0.82rem;
       font-weight: 900;
-      color: var(--muted);
+      text-decoration: none;
     }
 
     .language-switch a.active {
-      color: #fff;
       background: var(--teal);
+      color: #fff;
+    }
+
+    .language-switch a:not(.active):hover {
+      color: var(--teal-dark);
+      background: var(--soft-teal);
     }
 
 
@@ -202,7 +212,7 @@
     h1 {
       margin: 0;
       max-width: 760px;
-      font-size: clamp(3.1rem, 7.2vw, 6.4rem);
+      font-size: clamp(2.2rem, 4.96vw, 4.6rem);
       line-height: 0.92;
       letter-spacing: -0.078em;
     }
@@ -918,7 +928,7 @@
 <body>
 <main class="page-shell">
 <header class="topbar">
-<a aria-label="AI4GTech Anatolia ana sayfa" class="brand" href="https://ai4gtech.metudtx.com">
+<a aria-label="AI4GTech Anatolia ana sayfa" class="brand" href="https://ai4gtech.metudtx.com/tr/">
 <img alt="AI4GTech Anatolia logo" class="brand-logo" src="../ai4gtech-logo.png"/>
 <span class="brand-text">
           AI4GTech Anatolia
@@ -926,8 +936,8 @@
 </span>
 </a>
 <nav aria-label="Main navigation">
-<a href="https://metudtx.com">Ana Geçit</a>
-<a href="https://portal.metudtx.com">Dijital Platform</a>
+<a href="https://metudtx.com/tr/">Ana Geçit</a>
+<a href="https://portal.metudtx.com/tr/">Dijital Platform</a>
 <a href="https://dtx.metu.edu.tr">METU DTX</a>
 <a href="mailto:info@metudtx.com">İletişim</a>
 <span aria-label="Language selection" class="language-switch"><a href="/">EN</a><a class="active" href="/tr/">TR</a></span>
@@ -1269,7 +1279,7 @@
 </div>
 <p>
         AI4GTech Anatolia — METU DTX, Orta Doğu Teknik Üniversitesi koordinasyonunda<br/>
-<a href="https://metudtx.com">metudtx.com</a> · <a href="https://portal.metudtx.com">portal.metudtx.com</a> · <a href="mailto:info@metudtx.com">info@metudtx.com</a>
+<a href="https://metudtx.com/tr/">metudtx.com</a> · <a href="https://portal.metudtx.com/tr/">portal.metudtx.com</a> · <a href="mailto:info@metudtx.com">info@metudtx.com</a>
 </p>
 </footer>
 </main>
