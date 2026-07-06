@@ -143,6 +143,32 @@
       color: var(--teal-dark);
     }
 
+    .language-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.75);
+    }
+
+    .language-switch a {
+      min-width: 34px;
+      padding: 6px 9px;
+      border-radius: 999px;
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 900;
+      color: var(--muted);
+    }
+
+    .language-switch a.active {
+      color: #fff;
+      background: var(--teal);
+    }
+
+
     .hero {
       display: grid;
       grid-template-columns: 1.05fr 0.95fr;
@@ -175,7 +201,7 @@
     h1 {
       margin: 0;
       max-width: 760px;
-      font-size: clamp(3.1rem, 7.2vw, 6.4rem);
+      font-size: clamp(2.2rem, 4.96vw, 4.6rem);
       line-height: 0.92;
       letter-spacing: -0.078em;
     }
@@ -903,6 +929,7 @@
         <a href="https://portal.metudtx.com">Digital Platform</a>
         <a href="https://dtx.metu.edu.tr">METU DTX</a>
         <a href="mailto:info@metudtx.com">Contact</a>
+        <span class="language-switch" aria-label="Language selection"><a class="active" href="/">EN</a><a href="/tr/">TR</a></span>
       </nav>
     </header>
 
@@ -914,7 +941,7 @@
           AI4GTech Anatolia connects Türkiye’s machinery and automotive industries with METU DTX’s assessment, test-before-invest, training, finance and innovation ecosystem capabilities to accelerate trustworthy AI-enabled green and twin transformation.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="https://portal.metudtx.com">Start through the Digital Platform</a>
+          <a class="button primary" href="https://dtxportal.metu.edu.tr/apply">Apply through the Digital Platform</a>
           <a class="button secondary" href="#services">Explore EDIH Services</a>
         </div>
       </div>
@@ -1121,7 +1148,7 @@
             </p>
           </div>
           <div class="hero-actions" style="margin-top:22px;">
-            <a class="button primary" href="https://portal.metudtx.com">Use the Digital Platform</a>
+            <a class="button primary" href="https://dtxportal.metu.edu.tr/Auth/Login">Platform Login</a>
             <a class="button secondary" href="https://dtx.metu.edu.tr">Visit METU DTX</a>
           </div>
         </div>
@@ -1265,7 +1292,7 @@
         Companies can begin through the digital maturity platform and continue toward AI readiness, test-before-invest, training, access to finance and ecosystem services under the AI4GTech Anatolia service logic.
       </p>
       <div class="hero-actions">
-        <a class="button primary" href="https://portal.metudtx.com">Open Digital Platform</a>
+        <a class="button primary" href="https://dtxportal.metu.edu.tr/apply">Start Application</a>
         <a class="button secondary" href="mailto:info@metudtx.com">Contact METU DTX</a>
       </div>
     </section>
