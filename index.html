@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI4GTech Anatolia | METU DTX</title>
-  <meta name="description" content="AI4GTech Anatolia is a METU DTX-coordinated European Digital Innovation Hub initiative for AI-driven green and twin transformation in the machinery and automotive industries.">
+  <meta name="description" content="AI4GTech Anatolia is a European Digital Innovation Hub coordinated by METU to accelerate AI-enabled digital and green transformation in Türkiye’s machinery and automotive industries.">
   <meta name="theme-color" content="#0b4f4a">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.png" type="image/png">
@@ -459,6 +459,15 @@
       line-height: 1.68;
     }
 
+    .section-title.left-aligned {
+      margin: 0 0 20px;
+      text-align: left;
+    }
+
+    .hero-actions.compact {
+      margin-top: 22px;
+    }
+
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -800,6 +809,43 @@
       letter-spacing: -0.02em;
     }
 
+    .eu-funding {
+      display: grid;
+      grid-template-columns: minmax(220px, 280px) 1fr;
+      align-items: center;
+      gap: 28px;
+      margin-top: 32px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: #fff;
+      box-shadow: 0 16px 48px rgba(15, 31, 28, 0.06);
+    }
+
+    .eu-funding img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .eu-funding strong {
+      display: block;
+      color: var(--blue-dark);
+      font-size: 1.04rem;
+      letter-spacing: -0.02em;
+    }
+
+    .eu-funding p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 0.9rem;
+    }
+
+    .eu-funding .disclaimer {
+      font-size: 0.78rem;
+    }
+
     footer {
       margin-top: 32px;
       text-align: center;
@@ -861,6 +907,10 @@
       .service-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
+      .eu-funding {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 640px) {
@@ -921,15 +971,15 @@
         <img class="brand-logo" src="ai4gtech-logo.png" alt="AI4GTech Anatolia logo">
         <span class="brand-text">
           AI4GTech Anatolia
-          <span>METU DTX coordinated EDIH initiative</span>
+          <span>European Digital Innovation Hub coordinated by METU</span>
         </span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="https://metudtx.com">Gateway</a>
+        <a href="https://metudtx.com">METU DTX</a>
         <a href="https://portal.metudtx.com">Digital Platform</a>
-        <a href="https://dtx.metu.edu.tr">METU DTX</a>
+        <a href="https://dtx.metu.edu.tr">Center</a>
         <a href="mailto:info@metudtx.com">Contact</a>
-        <span class="language-switch" aria-label="Language selection"><a class="active" href="/">EN</a><a href="/tr/">TR</a></span>
+        <div class="language-switch" role="group" aria-label="Language selection"><a class="active" href="/">EN</a><a href="/tr/">TR</a></div>
       </nav>
     </header>
 
@@ -938,7 +988,7 @@
         <div class="eyebrow">AI for Green Transformation</div>
         <h1>AI4GTech Anatolia</h1>
         <p class="lead">
-          AI4GTech Anatolia connects Türkiye’s machinery and automotive industries with METU DTX’s assessment, test-before-invest, training, finance and innovation ecosystem capabilities to accelerate trustworthy AI-enabled green and twin transformation.
+          Coordinated by METU, AI4GTech Anatolia connects Türkiye’s machinery and automotive industries with digital maturity assessment, test-before-invest, training, access to finance and innovation ecosystem support to accelerate trustworthy AI-enabled digital and green transformation.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="https://dtxportal.metu.edu.tr/apply">Apply through the Digital Platform</a>
@@ -1002,7 +1052,7 @@
         </div>
 
         <div class="hero-tiles">
-          <div class="hero-tile"><span></span><strong>Digital & AI maturity</strong><small>Needs, readiness and roadmap orientation.</small></div>
+          <div class="hero-tile"><span></span><strong>Digital &amp; AI maturity</strong><small>Needs, readiness and roadmap orientation.</small></div>
           <div class="hero-tile"><span></span><strong>Test before invest</strong><small>Labs, pilots, simulations and validation.</small></div>
           <div class="hero-tile"><span></span><strong>Scale through ecosystem</strong><small>Technology providers, finance and European AI links.</small></div>
         </div>
@@ -1081,7 +1131,7 @@
         <div class="label">EDIH services</div>
         <h2>Service portfolio</h2>
         <p>
-          The public-facing page should present the service model clearly: practical, industry-oriented, and connected to METU DTX’s platform and technical delivery capacity.
+          The portfolio combines practical, industry-focused support with the METU DTX platform and the consortium’s technical delivery capacity.
         </p>
       </div>
 
@@ -1123,7 +1173,7 @@
             <svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 11l8-4"/><path d="M8 13l8 4"/></svg>
           </div>
           <h3>Ecosystem and Networking</h3>
-          <p>Matchmaking, brokerage, collaborative R&I, sectoral networks and connections to the European AI ecosystem.</p>
+          <p>Matchmaking, brokerage, collaborative R&amp;I, sectoral networks and connections to the European AI ecosystem.</p>
         </article>
 
         <article class="service">
@@ -1140,14 +1190,14 @@
       <div class="wide-panel split">
         <div>
           <img class="metu-mini-logo" src="metu-dtx-logo.png" alt="METU DTX logo">
-          <div class="section-title" style="text-align:left; margin:0 0 20px;">
+          <div class="section-title left-aligned">
             <div class="label">METU DTX technical layer</div>
             <h2>Execution and verification capacity</h2>
             <p>
-              AI4GTech Anatolia should not be presented as a brochure-only project. Its strongest public argument is that it adds delivery capacity to assessment, roadmapping, validation, implementation support and outcome tracking.
+              METU DTX provides the operational layer that connects assessment and roadmapping with project preparation, technical validation, implementation support and evidence-based outcome tracking.
             </p>
           </div>
-          <div class="hero-actions" style="margin-top:22px;">
+          <div class="hero-actions compact">
             <a class="button primary" href="https://dtxportal.metu.edu.tr/Auth/Login">Platform Login</a>
             <a class="button secondary" href="https://dtx.metu.edu.tr">Visit METU DTX</a>
           </div>
@@ -1179,38 +1229,42 @@
         <div class="label">Ecosystem</div>
         <h2>Consortium and delivery network</h2>
         <p>
-          The page should make the ecosystem legible without turning into a logo wall. The strongest structure is to group actors by function: coordination, sector access, regional access, technical capacity, finance and entrepreneurship.
+          AI4GTech Anatolia brings together universities, technology and testing organisations, industry associations, regional innovation actors and public partners to provide coordinated support across Türkiye.
         </p>
       </div>
 
       <div class="network">
         <article class="network-group">
-          <h3>Coordination and platform</h3>
+          <h3>Coordination and delivery</h3>
           <div class="tags">
             <span class="tag">METU</span>
-            <span class="tag">METU DTX</span>
             <span class="tag">ODTÜ Teknokent</span>
-            <span class="tag">OTEST</span>
+            <span class="tag">METU DTX / OTEST</span>
+            <span class="tag">CADEM</span>
           </div>
         </article>
 
         <article class="network-group">
-          <h3>Sector and transformation access</h3>
+          <h3>Industry and regional network</h3>
           <div class="tags">
+            <span class="tag blue">OSTECH</span>
+            <span class="tag blue">ETİM (ATAP)</span>
             <span class="tag blue">ASO</span>
             <span class="tag blue">ASO Model Factory</span>
             <span class="tag blue">MAKFED</span>
             <span class="tag blue">TAYSAD</span>
+            <span class="tag blue">INNOPARK</span>
           </div>
         </article>
 
         <article class="network-group">
-          <h3>Regional and innovation nodes</h3>
+          <h3>Associated partners</h3>
           <div class="tags">
-            <span class="tag green">Eskişehir ATAP</span>
-            <span class="tag green">OSTIM Technopark</span>
-            <span class="tag green">Konya Innopark</span>
-            <span class="tag green">Development Agencies</span>
+            <span class="tag green">TÜBİTAK ULAKBİM</span>
+            <span class="tag green">ANKA</span>
+            <span class="tag green">BEBKA</span>
+            <span class="tag green">MEVKA</span>
+            <span class="tag green">OSTİM OSB</span>
           </div>
         </article>
       </div>
@@ -1221,7 +1275,7 @@
         <div class="label">Technical infrastructure</div>
         <h2>METU research and technology ecosystem</h2>
         <p>
-          The AI4GTech service narrative should be anchored in visible technical infrastructure: labs, prototyping, analytics, digital twin, mobility, testing, academy and innovation support.
+          The service model is supported by METU and consortium infrastructure for AI and data analytics, advanced manufacturing, digital twins, prototyping, testing and innovation support.
         </p>
       </div>
 
@@ -1302,13 +1356,22 @@
       This page is the public landing point for AI4GTech Anatolia. Service intake and company assessment activities are routed through the METU DTX Digital Platform and METU DTX contact channels while the project-facing digital service environment is progressively expanded.
     </section>
 
+    <section class="eu-funding" aria-label="European Union funding acknowledgement">
+      <img src="eu-co-funded-en.png" alt="Co-funded by the European Union">
+      <div>
+        <strong>Digital Europe Programme</strong>
+        <p>AI4GTech Anatolia is co-funded by the European Union under the Digital Europe Programme. Grant Agreement No 101269818.</p>
+        <p class="disclaimer">Views and opinions expressed are those of the author(s) only and do not necessarily reflect those of the European Union or the granting authority. Neither the European Union nor the granting authority can be held responsible for them.</p>
+      </div>
+    </section>
+
     <footer>
       <div class="footer-brand-row">
         <img src="ai4gtech-logo.png" alt="AI4GTech Anatolia logo">
         <img src="metu-dtx-logo.png" alt="METU DTX logo">
       </div>
       <p>
-        AI4GTech Anatolia — coordinated by METU DTX, Middle East Technical University<br>
+        AI4GTech Anatolia — coordinated by Middle East Technical University (METU)<br>
         <a href="https://metudtx.com">metudtx.com</a> · <a href="https://portal.metudtx.com">portal.metudtx.com</a> · <a href="mailto:info@metudtx.com">info@metudtx.com</a>
       </p>
     </footer>
